@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #f7f7f7;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .section-center {
+    width: 90vw;
+    max-width: 600px;
+    background: #fff;
+    border-radius: 0.25rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 2rem 1.5rem;
+    margin-top: 2rem;
+  }
+  
+  .grocery-form {
+    margin-bottom: 1.5rem;
+  }
+  
+  .grocery-form h3 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    text-transform: capitalize;
+    font-size: 1.75rem;
+    color: #333;
+  }
+  
+  .form-control {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  #amount, #grocery {
+    width: 70%;
+    padding: 0.5rem;
+    border: 2px solid #f0f0f0;
+    border-right: none;
+    border-top-left-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+    outline: none;
+  }
+  
+  .submit-btn {
+    width: 30%;
+    background: #5cb85c;
+    color: white;
+    border: 2px solid #5cb85c;
+    border-top-right-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+    cursor: pointer;
+    transition: all 0.3s linear;
+  }
+  
+  .submit-btn:hover {
+    background: white;
+    color: #5cb85c;
+  }
+  
+  .alert {
+    margin-bottom: 1rem;
+    text-align: center;
+    color: red;
+  }
+  
+  .grocery-container {
+    margin-top: 2rem;
+  }
+  
+  .grocery-list {
+    max-height: 20rem;
+    overflow-y: auto;
+  }
+  
+  .grocery-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    background: #f0f0f0;
+    border-radius: 0.25rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .grocery-item p {
+    margin-bottom: 0;
+  }
+  
+  .btn-container {
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  .edit-btn, .delete-btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s linear;
+  }
+  
+  .edit-btn:hover {
+    color: green;
+  }
+  
+  .delete-btn:hover {
+    color: red;
+  }
+  
+  .clear-btn {
+    width: 100%;
+    background: red;
+    color: white;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    text-transform: capitalize;
+    transition: all 0.3s linear;
+    margin-top: 1rem;
+  }
+  
+  .clear-btn:hover {
+    background: darkred;
+  }
+  
+  .show-container {
+    display: block;
+  }
+  

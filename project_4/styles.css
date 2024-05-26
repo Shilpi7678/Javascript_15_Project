@@ -1,0 +1,112 @@
+body, ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Basic body styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: mistyrose;
+}
+
+/* Navigation styling */
+nav {
+    background: #333;
+    color: #fff;
+    padding: 2.5rem;
+    height: 2rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.nav-center {
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo styling */
+.logo {
+    width: 100px;
+}
+
+/* Nav header styling */
+.nav-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Toggle button styling */
+.nav-toggle {
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+
+
+/* Links styling */
+.links {
+    display: flex;
+    gap: 2rem;
+    margin-left: 10rem;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s ease;
+}
+
+.links a {
+    color: white;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.links a:hover {
+    color: #f3a712;
+}
+
+.links_icons {
+    gap: 3rem;
+    margin-left: 10rem;
+    /* font-size: 5rem; */
+}
+
+.fa-brands{
+    font-size: 2rem;
+}
+
+/* Social media icons styling */
+ul {
+    display: flex;
+    gap: 1rem;
+}
+
+ul li {
+    display: flex;
+    align-items: center;
+}
+
+ul a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+ul a:hover {
+    color: #f3a712;
+}
+
+.show-links {
+    height: 15rem;
+    background-color: gainsboro;
+}

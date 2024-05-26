@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: floralwhite;
+}
+
+.sidebar {
+    width: 25rem;
+    height: 100vh;
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+    overflow-y: auto;
+}
+
+.show-sidebar {
+    transform: translateX(0);
+}
+
+.sidebar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #444;
+}
+
+.sidebar-header h1 {
+    font-size: 1.5rem;
+}
+
+.sidebar-header span {
+    color: #ff6347; 
+}
+
+.close-btn {
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+}
+
+.close-btn:hover {
+    color: #ff6347;
+}
+
+.links, .links_icons {
+    list-style: none;
+    padding: 0;
+}
+
+.links li, .links_icons li {
+    margin: 1rem 0;
+}
+
+.links {
+    margin-top: 8rem;
+}
+
+.links a, .links_icons a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    display: block;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.links_icons {
+    display: flex;
+    margin-top: 15rem;
+    justify-content: center;
+}
+
+.links a:hover, .links_icons a:hover {
+    background-color: #555;
+}
+
+.links_icons a {
+    font-size: 1.5rem;
+}
+
+.links_icons a i {
+    margin-right: 0.5rem;
+}
+
+.sidebar-toggle {
+    height: 4rem;
+    width: 4rem;
+    background: transparent;
+    color: rgb(219, 14, 14);
+    cursor: pointer;
+    font-size: 1.5rem;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;  
+}
